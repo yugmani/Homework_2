@@ -3,15 +3,11 @@ html, body {
     width:100%;
     margin: 0;
     padding: 0;
-    background:rgb(68, 44, 44);
+    /* background:rgb(68, 44, 44); */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
     }
 
-    /* .navbar {
-        max-height:100%;
-        margin:0px 0px 30px 0px;
-        padding:0;
-    } */
-    
+   
     .photo {
         height:160px;
         width:160px;
@@ -21,15 +17,12 @@ html, body {
 
     .para {
         margin-top:20px;
+        font-size:13px;
+        word-spacing: 2pt;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
     }
     
-    /* .topline {
-        
-        background-color:black;
-        
-        }  */
-
-
+   
     .ymg {  
         /* margin-top:5px; */
         height:100%;
@@ -40,11 +33,10 @@ html, body {
         font-family: 'Georgia', Times, 'Times New Roman', serif;
         padding:15px 15px 0px 10px;
         /* font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif; */
+        opacity:0.8;
         
     }
 
-   
-      
 
     .text {
         color:#777777;
@@ -53,30 +45,18 @@ html, body {
        
         font-weight:bold;
         font-size:9px;
-        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-        
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;  
     }
 
     .bar {
-        margin:0 auto;
-        border-right:1px rgb(236, 211, 211) solid;
-        height:auto;
+        margin:0;
+        border-right:1px rgb(54, 52, 52) solid;
+        height:100%;
         padding:0px;
         float:left;
     }
 
     
-    .h3 {
-        font-weight:bold;
-        color:#777777;
-        font-size:25 px;
-        font-family: 'Georgia', Times, 'Times New Roman', serif;
-        background-color: #ffffff;
-       /* border-color:#cccccc;*/
-       }
-  
-   
-
     .story {
        width:60%;
        height:auto;
@@ -89,16 +69,23 @@ html, body {
       margin-bottom:30px;
    }
    
-   form, .collection {
+   .collection, form {
        width:60%;
        height:auto;
+       clear:both;
        margin:0 auto;
        color:black;
        padding:20px;
        font-size: 15px;
        font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
        background-color:whitesmoke;
-      margin-bottom:30px;
+        margin-bottom:150px;
+   }
+
+   .collection {
+       /* text-align:center; */
+       align-content: center;
+       align-items: center;
    }
 
    #port{
@@ -112,13 +99,13 @@ html, body {
    }
 
   #header {
+        display:flex;
       width:60%;
       height:50px;
       margin:0 auto;
       background-color:whitesmoke;
       vertical-align: middle;
-    display:flex;
-        
+             
   }
 
   
@@ -130,48 +117,86 @@ html, body {
     } 
 
     
-    .footer {
-        background-color:#666666;
-        font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-        height:50px;
-        border-top: 10px solid #596665;
-        padding-top:10px;
-        color:white;
-        
-    }
-
-    .row {
-        width:100%;
+   
+    .row1, .row2, .row3, .row4 {
+        width:90%;
         height:auto;
         display:flex;
-       justify-content: center;
-       /* justify-content: space-between; */
         margin:0 auto;
-        align-items: center;
-        background-color:gray;
+        /* background-color:gray; */
+        /* padding:10px; */
+        justify-content:space-around;
+        /*align-items: center;*/
+       
         text-align: center;
-        padding:10px;
     } 
+
+    .caption {
+        padding:5px;
+        color:black;
+    }
+
+    .logos{
+        width:50px; 
+        height:50px;
+        margin:5px;
+        /* border:2px solid yellow; */
+    }
 
     #fog {
         float:right;
-        margin-right:10px;
+        margin:0px 10px 0px 0px;
         /* background-color:gray; */
-        font-size:14px;
+        font-size:13px;
+        height:100%;
+        padding:0;
+        color:black;
+
     }
 
     .folio {
         margin:20px;
-        align-items:center;
+        /* align-items:center; */
         padding:10px;
+        /* background-color:green; */
     }
 
     a:hover, button:hover {
-        font-weight:bolder;
+        text-decoration:none;
+        font-weight:bold;
         transition:2s;
+        border-bottom:1px solid black;
+        margin:0;
+        /* background-color:silver; */
+        
     }
 
-    /* .container-fluid {
-        margin:0 auto;
-        background-color:gray;
-    } */
+   
+
+.footer {
+   
+    width:100%;
+    height:50px;
+    display:flex;
+    margin:0 auto;
+    border-top: 10px solid #899292;
+    padding-top:10px;
+    color:white;
+}
+
+li.a {
+    height:100%;
+}
+
+nav {
+    background-color:whitesmoke;
+    height:50px;
+    padding:0;
+    margin:0 auto;
+}
+.folio a:hover{
+    text-decoration:none;
+    border:none;
+}
+
+
