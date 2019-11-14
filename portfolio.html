@@ -9,136 +9,152 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="handheldFriendly" content="true">
         
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
+        <!-- EXTERNAL CSS REFERENCE SECTION -->
         <link rel='stylesheet' type='text/css' media='screen' href='assets/css/custom.css'>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
- 
+        <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous"/>
+        <link 
+            rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+
+        <!-- MEDIA QUERY SECTION -->
+        <style> 
+            @media (min-width: 576px) { body { background-color: #c51111; }}
+            @media (min-width: 768px) { body { background-color: #ec9a9a; }}
+            @media (min-width: 992px) { body { background-color: rgb(255, 255, 255); }}
+            @media (min-width: 1200px) { body { background-color: white; }}
+        </style> 
 </head>
 <body>
 
         <!--navigation bar section -->
             
-        <nav class="navbar navbar-expand-md navbar-light bg-white">
-                <!--div class="container-fluid" -->
-                     
-                  <a class="navbar-brand navbar-text ymg">Yug Gurung</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fog" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white">
+    
+                <div id="header">
+                    <!-- navbar-brand navbar-text -->
+                    <div class="ymg">Yug Gurung</div>
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fog" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                  
+                              </button>
+                    <!-- </div> -->
+                        <div class="collapse navbar-collapse justify-content-end text" id="fog">
+                              <ul class="navbar-nav">
+                                  <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                                  </li>
                                 
-                            </button>
-                  </div>
-                      <div class="collapse navbar-collapse justify-content-end text" id="fog">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                                </li>
-                              
-                                <li class="nav-item">
-                                  <a class="nav-link" href="portfolio.html">Portfolio</a>
-                                </li>
-                               
-                                <li class="nav-item">
-                                  <a class="nav-link" href="contactinfo.html">Contact</a>
-                                </li>
-                          
-                            </ul>
-                      </div>
-                      
-                  
-            </nav>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                  </li>
+                                 
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="contactinfo.html">Contact</a>
+                                  </li>
+                            
+                              </ul>
+                        </div>
+                    </div>   
+                    
+              </nav>
                       
         <!--Main Content -->
         
-        <div class="row">
-                
-                <div class="col-sm-2 col-md-2 col-lg-2 mb-4">
+        <div class="container-fluid mt-5 bg-white">
+   
+            <div class="collection">
+                <div>
+                    <h2>Portfolio: My Great Achievements</h2>
                 </div>
-                
-                <div class="col-sm-8 col-md-8 col-lg-8 mb-4">
-                <div class="container mt-5 border border-light bg-white story">
-            
-                <div class="p-3 story">
-                    <h5>Portfolio: My Great Achievements</h5>
-
                     <hr>
-                </div>
-                <div class="col-sm-2 col-md-2 col-lg-2 mb-4">
-                </div>
-            
-            
-                <div class="row bg-light m-2 align-items-center" style="height:60px">
-                        <div class="col-sm-2 col-md-2 col-lg-2 mb-4">
-                        </div>
+                
+                <!-- <div id="port"> -->
+                <div class="row">
+                        
                     
-                        <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                        <div class="folio">
                             <a href="https://drive.google.com/file/d/1w7qku5HPdyfiDHr82VcsNF1Iu-ujl1NH/view?usp=sharing">
                             <img src="assets/images/html_logo.png" style="width:50px; height:50px;">
                             </a>
                         </div>
                     
-                        <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                        <div class="folio">
                             <a href="https://drive.google.com/file/d/1JtTZIGIAo6iI2ar0OxKTFfsBFFTDy7nV/view?usp=sharing">
                             <img src="assets/images/buddha.png" style="width:50px; height:50px;">
                             </a>
                         </div>
                     
-                        <div class="col-sm-2 col-md-2 col-lg-2 mb-4">
-                        </div>
+                        
                 </div>
             
-                <div class="row m-2 bg-light align-items-center" style="height:60px">
+                <div class="row">
                         
-                        <div class="col-sm-2 col-md-2 col-lg-2 mb-4">
-                        </div>
+                        
 
-                        <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                        <div class="folio">
                             <a href="https://scratch.mit.edu/projects/328095692">
                             <img src="assets/images/scratch.svg" style="width:50px; height:50px;">
                             </a>
                         </div>
 
-                        <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                        <div class="folio">
                             <a href="https://scratch.mit.edu/projects/328688345">
                             <img src="assets/images/cat.svg" style="width:50px; height:50px;">
                             </a>
 
                         </div>
 
-                        <div class="col-sm-2 col-md-2 col-lg-2 mb-4">
-                        </div>
+                        
                 </div>
 
-                <div class="row mt-2 mr-2 mb-3 ml-2  bg-light align-items-center" style="height:60px">
+                <div class="row">
                         
-                        <div class="col-sm-2 col-md-2 col-lg-2 mb-4">
-                        </div>
+                        
 
-                        <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                        <div class="folio">
                             <a href="https://drive.google.com/file/d/16dpyAj6EvTMwqeQKcaMIszo0LLI4xW1R/view?usp=sharing">
                             <img src="assets/images/code.png" style="width:50px; height:50px;">
                             </a>
                         </div>
                     
-                        <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                        <div class="folio">
                             <a href="https://drive.google.com/open?id=1MeOsZ7LCQs8b3OWwUyy6rr53PYM1F_FE">
                                 <img src="assets/images/IMG_5823.jpg" style="width:50px; height:50px;">
                                 </a>
                         </div>
 
-                        <div class="col-sm-2 col-md-2 col-lg-2 mb-4">
-                        </div>
+                        
                 </div>
-        </div>
-        <div class="col-sm-2 col-md-2 col-lg-2 mb-4">
 
-        </div>    
-           </div>  
-     
+                <div class="row">
+                        
+                    
+
+                    <div class="folio">
+                        <a href="https://drive.google.com/file/d/16dpyAj6EvTMwqeQKcaMIszo0LLI4xW1R/view?usp=sharing">
+                        <img src="assets/images/code.png" style="width:50px; height:50px;">
+                        </a>
+                    </div>
+                
+                    <div class="folio">
+                        <a href="https://drive.google.com/open?id=1MeOsZ7LCQs8b3OWwUyy6rr53PYM1F_FE">
+                            <img src="assets/images/IMG_5823.jpg" style="width:50px; height:50px;">
+                            </a>
+                    </div>
+
+                   
+                </div>
+
+            <!-- </div> -->
         </div>
+        
+        </div>
+         
+     
+      
     
     
     <!-- Footer Sectioin -->
@@ -147,7 +163,11 @@
                 Copyright &#x000A9;
         
         </nav>
-        
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>       
 
 </body>
 </html>
